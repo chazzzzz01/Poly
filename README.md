@@ -3,8 +3,10 @@
 # env\scripts\activate
 # cd minilang_project
 
-run, py manage.py runserver if u see some red txt said , 
+RUN
+# py manage.py runserver 
 
+if u see some red txt, 
 You have 18 unapplied migration(s). Your project may 
 not work properly until you apply the migrations for 
 app(s): admin, auth, contenttypes, sessions.
