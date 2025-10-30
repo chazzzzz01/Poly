@@ -1,6 +1,12 @@
 Poly is a mini version of python, some of it concepts is form python like the variable, function, and if-else . 
 
+RECOMMENDED TO LEARN THE BASIC OF PYTHON 
+LEARN THE FUNCTION, IF-ELSE, RECURSION AND Closures
+
+
 BASIC CONCEPT OF POLY 
+
+recome
 
 VARIABLE 
 so in poly we have here the let, let is like the name box that hold the string, numbers. 
