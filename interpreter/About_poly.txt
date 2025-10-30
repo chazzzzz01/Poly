@@ -1,0 +1,167 @@
+Poly is a mini version of python, some of it concepts is form python like the variable, function, and if-else . 
+
+BASIC CONCEPT OF POLY 
+
+VARIABLE 
+so in poly we have here the let, let is like the name box that hold the string, numbers. 
+
+let [variable] = [value]
+print({variable})
+
+EXAMPLE: 
+
+1. Basic Structure
+
+Poly uses simple rules — like keywords let, func, and print.
+
+let name = "Lisa"
+print(name)
+
+OUTPUT 
+Lisa
+
+2. Expressions & Math
+
+You can do normal math operations:
+
+let a = 10
+let b = 5
+print(a + b/)
+print(a - b/)
+print(a * b/)
+print(a / b/)
+
+Output:
+
+15
+5
+50
+2.0
+
+just add some / to have spacing
+
+let num = 4
+print(num + 6)
+
+Output:
+
+10
+
+
+
+3. Functions
+
+Functions are reusable pieces of code.
+
+func add(x, y) = x + y
+print(add(3, 7))
+
+func mult(x, y) = x * y
+print(mult(3, 7))
+
+func sub(x, y) = x - y
+print(sub(3, 7))
+
+func div(x, y) = x / y
+print(div(3, 7))
+
+Output:
+10 21 -4 0.42857142857142855
+
+
+4. Recursion
+
+Recursion means a function calls itself.
+
+Example:
+
+func factorial(n) = if n <= 1 then 1 else n * factorial(n - 1)
+print(factorial(5))
+
+
+ Output:
+
+120
+
+Explanation:
+
+factorial(5) = 5 * factorial(4)
+
+factorial(4) = 4 * factorial(3)
+
+until it reaches 1.
+
+5. Closures
+
+Closures let functions remember the variables from where they were created.
+
+Example:
+
+func makeMultiplier(x) = func(y) = x * y
+let double = makeMultiplier(2)
+let triple = makeMultiplier(3)
+print(double(5)/)
+print(triple(5))
+
+
+Output:
+
+10 15
+
+Explanation:
+
+makeMultiplier(2) creates a function that always multiplies by 2
+
+makeMultiplier(3) creates a function that always multiplies by 3
+
+So double(5) = 10, triple(5) = 15
+
+
+
+6. If-Else (Conditions)
+
+You can write inline or block if statements.
+
+Inline:
+let x = 10
+print(if x > 5 then "Big" else "Small")
+
+
+Output:
+
+Big
+
+
+
+Block:
+
+let x = "she"
+
+if x == "she" then
+    print("Perfect")
+else:
+    print("Not good")
+
+
+Output:
+
+Perfect
+
+
+
+7. Printing Output
+
+Normal:
+
+print("Hello Poly")
+
+
+With space after:
+
+print("Hello"/)
+print("World")
+
+
+Output:
+
+Hello World

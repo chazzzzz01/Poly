@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poly</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl text-center">
+    <h1 class="text-3xl font-bold mb-4 text-black-700">Poly Language Interpreter</h1>
+    <textarea id="code" rows="10" class="w-full p-2 border rounded mb-4" placeholder="Write your Poly code here..."></textarea>
+    <button onclick="runCode()" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Run Code</button>
+    <pre id="result" class="mt-4 p-3 bg-gray-100 rounded h-40 overflow-y-auto text-left"></pre>
+  </div>
+
+  <script>
+    async function runCode() {
+      const code = document.getElementById('code').value;
+      const response = await fetch('/execute/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'X-CSRFToken': '{{ csrf_token }}'
+        },
+        body: `code=${encodeURIComponent(code)}`
+      });
+      const data = await response.json();
+      document.getElementById('result').textContent = data.result || '';
+    }
+  </script>
+</body>
+</html>
