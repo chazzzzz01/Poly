@@ -1,3 +1,9 @@
+# To understand how this code work understand each code do some research on it.
+# recommeded to copy each code then make chatgpt explain each code and syntax how it work.
+# Be sure to understand regix patterns use in the code.
+# Do some research on each code block to understand it.
+
+
 import re
 import io
 import contextlib
@@ -199,3 +205,5 @@ class PolyLangInterpreter:
             i += 1
 
         return output_buffer.getvalue().strip()
+
+
