@@ -1,9 +1,16 @@
-# open environment first to the miniproject folder then, 
+# 1. Clone the repository
+git clone https://github.com/chazzzzz01/poly.git
 
+# 2. Go into the project folder
+cd your-repo
+
+# 3. Open in VSCode
+code .
+
+# open environment first to the miniproject folder then, 
 # env\scripts\activate
 # cd minilang_project
-
-RUN
+# RUN
 # py manage.py runserver 
 
 if u see some red txt, 
