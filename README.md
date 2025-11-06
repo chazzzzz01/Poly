@@ -1,5 +1,8 @@
-# 1. Clone the repository
-git clone https://github.com/chazzzzz01/poly.git
+# OPEN VSCODE
+# OPEN TERMINAL
+
+# Clone the repository
+git clone https://github.com/chazzzzz01/Poly.git
 
 # open environment first to the miniproject folder then,
 
